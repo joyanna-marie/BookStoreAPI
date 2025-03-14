@@ -1,6 +1,8 @@
-[build]
-  command = "npm run build"
-  publish = "dist"
+[[plugins]]
+package = "@netlify/plugin-cache"
 
-  [plugins.inputs]
-  paths = [".vite", "node_modules"]
+[plugins.inputs]
+paths = [
+  ".vite",
+  "node_modules"
+]
