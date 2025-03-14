@@ -1,8 +1,8 @@
-[[plugins]]
-package = "@netlify/plugin-cache"
 
-[plugins.inputs]
-paths = [
-  ".vite",
-  "node_modules"
-]
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+
+[context.production]
+  environment = { NODE_VERSION = "18" }
